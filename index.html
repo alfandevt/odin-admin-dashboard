@@ -8,7 +8,47 @@
   </head>
   <body>
     <div id="root">
-      <header></header>
+      <header class="main-header">
+        <div class="search-bar">
+          <img
+            src="assets/header-icons/magnify.svg"
+            alt="Search"
+            class="search-icon"
+          />
+          <input class="search-bar-input" placeholder="search..." type="text" />
+        </div>
+        <div class="greet-info">
+          <img
+            class="greet-user-img"
+            src="assets/shared-icons/account.svg"
+            alt="User"
+          />
+          <p class="greet-user-text">
+            Hi there, <br />
+            <span class="greet-user-name">Morgan Oakley (@morgan)</span>
+          </p>
+        </div>
+        <div class="user-profile">
+          <img
+            src="assets/header-icons/bell-ring-outline.svg"
+            alt="Notification"
+            class="user-notification"
+          />
+          <div class="user-profile-action">
+            <img
+              src="assets/shared-icons/account.svg"
+              alt="User Account"
+              class="user-acc-img"
+            />
+            <span class="user-profile-name">Morgan Oakley</span>
+          </div>
+        </div>
+        <div class="actions-group">
+          <button class="btn-actions">New</button>
+          <button class="btn-actions">Upload</button>
+          <button class="btn-actions">Share</button>
+        </div>
+      </header>
       <aside></aside>
       <main></main>
     </div>

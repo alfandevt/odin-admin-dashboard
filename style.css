@@ -41,3 +41,126 @@ img {
   display: block;
 }
 /* Reset End */
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: minmax(150px, 1fr) 4fr;
+  /* min-height: 100vh; */
+}
+
+/* Header Start */
+.main-header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  padding: var(--spacing-1) var(--spacing-3);
+}
+
+.search-bar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+.search-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.search-bar-input {
+  border: none;
+  border-radius: var(--spacing-2);
+  font-size: 1rem;
+  width: 100%;
+  max-width: 650px;
+  background-color: #d5d7d7;
+  color: #fff;
+  padding: calc(var(--spacing-1) / 2) var(--spacing-1);
+}
+
+.greet-info {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.greet-user-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.greet-user-text {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.greet-user-name {
+  font-size: 1.8rem;
+}
+
+.user-profile {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.user-notification {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.user-profile-action {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: var(--spacing-3);
+}
+
+.user-acc-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.user-profile-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.actions-group {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.btn-actions {
+  border: none;
+  border-radius: var(--spacing-2);
+  padding: calc(var(--spacing-1) / 2) var(--spacing-3);
+  background: #569dff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.btn-actions:hover {
+  background: #4992e6;
+}
+.btn-actions:active {
+  background: #457ee2;
+}
+/* Header End */
